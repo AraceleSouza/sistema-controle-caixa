@@ -1,60 +1,102 @@
-# Lojinha da Lulu  🛍️
+# 🛍️ Lojinha da Lulu
 
-## **:computer:** Sobre o Projeto
+## 💻 Sobre o Projeto
 
-Um projeto simples em Python para **registro de vendas** com diferentes formas de pagamento: dinheiro, cartão (débito ou crédito) e pix.  
-O sistema exibe totais por tipo de pagamento, calcula acréscimos e troco, e mantém um saldo geral do caixa.
+Este projeto é um sistema simples de registro de vendas desenvolvido em Python, executado via terminal.
+A aplicação permite registrar compras utilizando diferentes formas de pagamento, calcular valores automaticamente e manter o controle do caixa.
+
+---
+
+## 🚀 Funcionalidades
+
+* 🧾 Registro de vendas
+* 💰 Cálculo do valor total das vendas
+* 📊 Controle de vendas por tipo de pagamento
+* 💳 Regras específicas por pagamento:
+
+  * Crédito: acréscimo de 5%
+  * Débito: valor normal
+  * Pix: valor normal
+  * Dinheiro: cálculo de troco
+* 🧮 Controle de saldo total do caixa
+* 🧭 Interface simples via terminal (CLI)
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
--   Python 3  
--   Módulo `time`
--   ANSI Escape Codes (para cores no terminal)
+* Python 3
+* Módulo padrão `time`
+* ANSI Escape Codes (cores no terminal)
 
-##  **:sparkles:** Funcionalidades
+---
 
--   Registrar novas vendas.
--   Calcular o total de vendas realizadas.
--  Listar  total de vendas por tipo de pagamento (cartão, pix ou dinheiro).
-- Aplicar regras específicas conforme o tipo de pagamento:
--   💳 **Cartão de crédito:** acréscimo de **5%** sobre o valor total.
--   💳 **Cartão de débito:** valor sem acréscimo.
--   💸 **Dinheiro:** informa o **valor pago** e calcula o **troco**.
--   ⚡ **Pix:** valor sem acréscimo.
--   Interface em linha de comando (CLI) simples e intuitiva.
+## ▶️ Como Executar o Projeto
 
+1. Execute o arquivo principal:
 
-## 🧠 Conceitos utilizados
+```bash id="loja1"
+python main.py
+```
 
-- Estrutura do Programa.
-- Entrada de Dados.
-- Estruturas Condicionais.
-- Manipulação de Strings.
-- Cálculos com Porcentagem e Troco.
-- Variáveis Acumuladoras.
-- Formatação de Saída.
-- Cores no Terminal (ANSI).
-- Biblioteca `time`.
+2. Siga as instruções exibidas no terminal.
 
+---
 
 ## ⚙️ Funcionamento do Sistema
 
-1.  O sistema mostra o nome da loja centralizado na tela.
-2.  Solicita o valor da compra.
-3.  Exibe as opções de pagamento:
-    -   `[1]` Dinheiro
-    -   `[2]` Cartão (D/C)
-    -   `[3]` Pix
-4.  Calcula e mostra o resultado conforme a forma de pagamento:
-    -   **Dinheiro:** solicita valor pago e calcula troco.
-    -   **Cartão de crédito:** adiciona acréscimo de 5%.
-    -   **Cartão de débito:** valor normal.
-    -   **Pix:** valor normal.
-5.  Acumula os valores nas variáveis correspondentes.
-6.  Pergunta se deseja registrar uma nova compra.
-7.  Ao encerrar, mostra o **saldo total** e o **total de vendas por tipo de pagamento**.
+1. Exibe o nome da loja
+2. Solicita o valor da compra
+3. Apresenta as opções de pagamento:
 
+   * `[1]` Dinheiro
+   * `[2]` Cartão (Crédito/Débito)
+   * `[3]` Pix
+4. Aplica regras conforme o pagamento
+5. Registra e acumula os valores
+6. Permite múltiplas vendas
+7. Exibe resumo final do caixa
+
+---
+
+## 🧠 Conceitos Aplicados
+
+* Estruturas condicionais
+* Laços de repetição
+* Manipulação de strings
+* Cálculo de porcentagem
+* Variáveis acumuladoras
+* Formatação de saída
+* Uso de cores no terminal (ANSI)
+* Controle de fluxo do programa
+
+---
+
+## 📌 Observações
+
+* Os dados são armazenados apenas em memória
+* O sistema é executado via terminal
+* Não há persistência em banco de dados
+
+---
+
+## 🔮 Melhorias Futuras
+
+* 💾 Persistência de dados (arquivo ou banco)
+* 📄 Geração de relatório de vendas
+* 🖥️ Interface gráfica
+* 🌐 Versão web
+* 📅 Histórico de vendas
+
+---
 
 ## 🎯 Objetivo
 
-Criar uma aplicação prática e didática para reforçar o aprendizado de **Python básico** e **lógica de programação**, simulando o funcionamento de um pequeno sistema de controle de vendas.
+Desenvolver uma aplicação prática para consolidar conhecimentos em lógica de programação, estruturas de controle e manipulação de dados em Python, simulando um sistema real de vendas.
+
+---
+
+## 👩‍💻 Autora
+
+Aracele Souza
+Estudante de Engenharia de Software em transição de carreira para desenvolvimento
