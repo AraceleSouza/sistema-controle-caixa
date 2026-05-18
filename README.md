@@ -1,102 +1,153 @@
-# 🛍️ Lojinha da Lulu
+# 💰 Sistema de Controle de Caixa
 
-## 💻 Sobre o Projeto
-
-Este projeto é um sistema simples de registro de vendas desenvolvido em Python, executado via terminal.
-A aplicação permite registrar compras utilizando diferentes formas de pagamento, calcular valores automaticamente e manter o controle do caixa.
+Sistema de controle de caixa desenvolvido com Python, Flask, HTML, CSS e JavaScript, com registro de vendas e resumo financeiro em tempo real.
 
 ---
 
 ## 🚀 Funcionalidades
 
-* 🧾 Registro de vendas
-* 💰 Cálculo do valor total das vendas
-* 📊 Controle de vendas por tipo de pagamento
-* 💳 Regras específicas por pagamento:
-
-  * Crédito: acréscimo de 5%
-  * Débito: valor normal
-  * Pix: valor normal
-  * Dinheiro: cálculo de troco
-* 🧮 Controle de saldo total do caixa
-* 🧭 Interface simples via terminal (CLI)
+✅ Registro de vendas  
+✅ Controle de pagamentos em dinheiro, débito, crédito e PIX  
+✅ Cálculo automático de troco  
+✅ Taxa automática no crédito  
+✅ Histórico de vendas  
+✅ Resumo financeiro atualizado em tempo real  
+✅ Interface moderna e responsiva  
+✅ Feedback visual de sucesso e erro  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠 Tecnologias utilizadas
 
-* Python 3
-* Módulo padrão `time`
-* ANSI Escape Codes (cores no terminal)
+- Python
+- Flask
+- HTML5
+- CSS3
+- JavaScript
+- Lucide Icons
 
 ---
 
-## ▶️ Como Executar o Projeto
+# 📂 Estrutura do projeto
 
-1. Execute o arquivo principal:
-
-```bash id="loja1"
-python main.py
+```plaintext
+controle-caixa/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   └── script.js
+│   │
+│   └── img/
+│
+├── templates/
+│   └── index.html
+│
+└── utils/
+    └── helpers.py
 ```
 
-2. Siga as instruções exibidas no terminal.
+## Interface do Sistema
 
----
+![Interface do Sistema](static/img/interface-sistema-controle-caixa.png)
 
-## ⚙️ Funcionamento do Sistema
+----------
 
-1. Exibe o nome da loja
-2. Solicita o valor da compra
-3. Apresenta as opções de pagamento:
+# ⚙️ Como executar o projeto
 
-   * `[1]` Dinheiro
-   * `[2]` Cartão (Crédito/Débito)
-   * `[3]` Pix
-4. Aplica regras conforme o pagamento
-5. Registra e acumula os valores
-6. Permite múltiplas vendas
-7. Exibe resumo final do caixa
+## 1. Clone o repositório
 
----
+```bash
+git clone https://github.com/AraceleSouza/sistema-controle-caixa.git
 
-## 🧠 Conceitos Aplicados
+```
 
-* Estruturas condicionais
-* Laços de repetição
-* Manipulação de strings
-* Cálculo de porcentagem
-* Variáveis acumuladoras
-* Formatação de saída
-* Uso de cores no terminal (ANSI)
-* Controle de fluxo do programa
+----------
 
----
+## 2. Acesse a pasta do projeto
 
-## 📌 Observações
+```bash
+cd controle-caixa
 
-* Os dados são armazenados apenas em memória
-* O sistema é executado via terminal
-* Não há persistência em banco de dados
+```
 
----
+----------
 
-## 🔮 Melhorias Futuras
+## 3. Instale as dependências
 
-* 💾 Persistência de dados (arquivo ou banco)
-* 📄 Geração de relatório de vendas
-* 🖥️ Interface gráfica
-* 🌐 Versão web
-* 📅 Histórico de vendas
+```bash
+py -m pip install -r requirements.txt
 
----
+```
 
-## 🎯 Objetivo
+----------
 
-Desenvolver uma aplicação prática para consolidar conhecimentos em lógica de programação, estruturas de controle e manipulação de dados em Python, simulando um sistema real de vendas.
+## 4. Execute o projeto
 
----
+```bash
+py app.py
 
-## 👩‍💻 Autora
+```
+
+----------
+
+## 5. Abra no navegador
+
+```plaintext
+http://127.0.0.1:5000
+
+```
+
+----------
+
+# 🎨 Melhorias aplicadas
+
+-   Melhor organização do código
+    
+-   Separação de responsabilidades
+    
+-   Interface modernizada
+    
+-   Melhor experiência do usuário
+    
+-   Código mais limpo e legível
+    
+-   Funções auxiliares reutilizáveis
+    
+-   Melhor tratamento de erros
+    
+-   Estrutura mais profissional para portfólio
+    
+-   Responsividade para dispositivos móveis
+    
+
+----------
+
+# 🔮 Melhorias futuras
+
+-   Persistência de dados com SQLite
+    
+-   Dashboard com gráficos
+    
+-   Exportação de relatórios
+    
+-   Tema claro/escuro
+    
+-   Login de usuário
+    
+-   Filtros no histórico
+    
+-   Armazenamento do histórico no navegador
+    
+
+----------
+
+# 👩‍💻 Desenvolvido por
 
 Aracele Souza
-Estudante de Engenharia de Software em transição de carreira para desenvolvimento
